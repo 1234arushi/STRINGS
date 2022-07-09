@@ -1,3 +1,24 @@
+//LEETCODE-
+//https://leetcode.com/problems/reverse-string/submissions/
+class Solution {
+public:
+    void reverseString(vector<char>& s) {
+        int n=s.size();
+        
+        for(int i=0;i<n/2;i++)
+        {
+            char c=s[i];
+            s[i]=s[n-i-1];
+            s[n-i-1]=c;
+            
+        }
+        
+    }
+};
+
+
+
+//GFG-
 //https://practice.geeksforgeeks.org/problems/reverse-a-string/1
 
 
